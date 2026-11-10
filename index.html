@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head><meta charset="UTF-8"><title>Meu blog tech</title>
-<style>
-body{margin:0;font-family:sans-serif;background:#f5f5f5}
-header{background:#183C63;color:#FFF;text-align:center;padding:16px}
-main{background:#FFF;padding:16px;display:flex;flex-wrap:wrap}
-article{border:1px solid #183C63;margin:16px;padding:16px;flex:1 1 25%;text-align:center;border-radius:8px}
-img{width:100px;height:100px;border-radius:50%}
-</style></head>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu blog tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header><h1>Meu blog tech</h1><p>Conhecimentos sobre tecnologia</p></header>
-<main>
-<article><img src="https://via.placeholder.com/100"><h2>Meu primeiro post</h2><p>Por: Marcelo Paludetto</p><p>Boas-vindas!</p></article>
-<article><img src="https://via.placeholder.com/100"><h2>Aprendendo HTML</h2><p>Por: Marcelo Paludetto</p><p>Começando no front-end</p></article>
-</main>
-</body></html>
+  <header>
+    <div>
+      <h1>Meu blog tech</h1>
+      <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </div>
+    <button class="btn-tema-escuro" onclick="mudaTema()">🌙</button>
+  </header>
+  <main>
+    <article>
+      <h2>Meu primeiro post</h2>
+      <p>Por: Marcelo Paludetto</p>
+      <p>Boas-vindas ao meu novo blog!</p>
+    </article>
+    <article>
+      <h2>A quantidade de dados no mundo é surreal</h2>
+      <p>Por: Marcelo Paludetto</p>
+      <p>90% dos dados foram gerados nos últimos 2 anos!</p>
+      <p class="artigo-fonte">Fonte: <a href="https://www.jornaldocomercio.com/" target="_blank">Jornal do Comércio</a></p>
+    </article>
+    <article>
+      <h2>O primeiro mouse não era de plástico</h2>
+      <p>Por: Giuliana Cestari</p>
+      <p>Foi feito de madeira em 1964!</p>
+      <p class="artigo-fonte">Fonte: <a href="https://www.tecmundo.com.br/" target="_blank">TecMundo</a></p>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
